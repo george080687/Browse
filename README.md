@@ -119,4 +119,4 @@ namespace Bagaev_web
 
     }
 
-         
+         How can I run this program automatically instead of a standard browser?
