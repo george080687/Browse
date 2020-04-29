@@ -1,0 +1,220 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Drawing;
+
+namespace RW_txt
+{
+    public partial class Forum1 : System.Web.UI.Page
+    {
+        String ИмяФайла;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Page.Title = "Оставьте свой комментарий";
+            Button1.Width = 150; Button2.Width = 95;
+            Button1.Text = "Читать"; Button2.Text = "Написать";
+            Button1.Focus();
+            TextBox1.TextMode = TextBoxMode.MultiLine;
+            TextBox2.TextMode = TextBoxMode.SingleLine;
+
+            TextBox1.Width = 1000; TextBox1.Height = 1000;
+
+            // TextBox6.Width = 250; TextBox6.Height = 18;
+            TextBox1.ReadOnly = true;
+            TextBox2.ReadOnly = true;
+
+            ИмяФайла = Request.PhysicalApplicationPath + "txt1.txt";
+        }
+
+            /* // Define the name and type of the client scripts on the page.
+             String csname1 = "MyScript";
+             Type cstype = this.GetType();
+
+             // Get a ClientScriptManager reference from the Page class.
+             ClientScriptManager cs = Page.ClientScript;
+
+             string MyScript = @"
+
+ window.current_scroll_pos = undefined;
+ function ScrollHandler(e){
+ e = e || window.event;
+ var targ = e.target || e.srcElement;
+ if(window.current_scroll_pos == undefined)
+  window.current_scroll_pos=targ.scrollTop;
+ else
+  targ.scrollTop=window.current_scroll_pos;};	
+ var inp = document.getElementById('" +
+         TextBox1.ClientID + @"');window.current_scroll_pos=inp.scrollTop;
+
+ inp.onscroll = ScrollHandler;";
+
+             cs.RegisterStartupScript(cstype, csname1, MyScript, true);
+
+
+
+             // Define the name and type of the client scripts on the page.
+             String csname2 = "MyScript";
+             Type cstype1 = this.GetType();
+
+             // Get a ClientScriptManager reference from the Page class.
+             ClientScriptManager cs1 = Page.ClientScript;
+
+             string MyScript1 = @"
+
+ window.current_scroll_pos = undefined;
+ function ScrollHandler(e){
+ e = e || window.event;
+ var targ = e.target || e.srcElement;
+ if(window.current_scroll_pos == undefined)
+  window.current_scroll_pos=targ.scrollTop;
+ else
+  targ.scrollTop=window.current_scroll_pos;};	
+ var inp = document.getElementById('" +
+         TextBox2.ClientID + @"');window.current_scroll_pos=inp.scrollTop;
+
+ inp.onscroll = ScrollHandler;";
+
+             cs1.RegisterStartupScript(cstype1, csname2, MyScript1, true);*/
+
+
+
+          /*  // Define the name and type of the client scripts on the page.
+            String csname1 = "MyScript";
+            Type cstype = this.GetType();
+
+            // Get a ClientScriptManager reference from the Page class.
+            ClientScriptManager cs = Page.ClientScript;
+
+            string MyScript = @"
+
+window.current_scroll_pos = undefined;
+function ScrollHandler(e){
+e = e || window.event;
+var targ = e.target || e.srcElement;
+if(window.current_scroll_pos == undefined)
+ window.current_scroll_pos=targ.scrollTop;
+else
+ targ.scrollTop=window.current_scroll_pos;};	
+var inp = document.getElementById('" +
+        TextBox1.ClientID + @"');window.current_scroll_pos=inp.scrollTop;
+
+inp.onscroll = ScrollHandler;";
+
+            cs.RegisterStartupScript(cstype, csname1, MyScript, true);
+
+
+
+
+
+
+
+
+
+
+        }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         protected void Button2_Click1(object sender, EventArgs e)
+       {
+
+       
+            try
+            {
+
+
+                var Писатель = new System.IO.StreamWriter(ИмяФайла, false, System.Text.Encoding.GetEncoding(1251));
+                Писатель.WriteLine(TextBox1.Text + "      " + DateTime.Now.ToString());
+                Писатель.WriteLine(TextBox2.Text + "      ");
+                
+
+
+                Писатель.Close();
+
+            }
+            catch (Exception Ситуация)
+            {
+                Response.Write("Ошибка записи файла <br />" + Ситуация.Message + "<br/>");
+            }
+
+        }
+
+       protected void Button1_Click1(object sender, EventArgs e)
+        {
+
+        
+            try
+            {
+                TextBox1.ReadOnly = false;
+                TextBox2.ReadOnly = false;
+               
+               // Button2.Enabled = true;
+                var Читатель = new System.IO.StreamReader(ИмяФайла, System.Text.Encoding.GetEncoding(1251));
+                int i = 0;
+                while (i <= 6)
+                {
+
+
+                   i++;
+
+                }
+
+                  
+                TextBox1.Text = Читатель.ReadToEnd();
+                TextBox2.Text = i.ToString("Ваше имя:"); 
+                
+
+
+                // TextBox1.ForeColor = Color.Black;
+                Читатель.Close();
+            }
+
+
+
+
+
+            catch (System.IO.FileNotFoundException Ситуация1)
+            {
+                Response.Write("Нет такого файла<br/>" + Ситуация1.Message);
+            }
+            catch (Exception Ситуация2)
+            {
+                Response.Write("Ошибка чтения файла <br/>" + Ситуация2.Message + "<br/>");
+            }
+        }
+
+      
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+}
