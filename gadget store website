@@ -1,0 +1,997 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    
+        
+    
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter51112412 = new Ya.Metrika2({
+                    id:51112412,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51112412" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<title>Магазин гаджетов</title>
+<meta http-equiv="content-Type" content="text/html; charset=windows-1251"/>
+<meta name="yandex-verification" content="49ef70f07b0e91e9" />
+<link rel ="Shortcut Icon" href="http://easyget.msk.ru/Letter-E-icon.jpeg" type="image/jpeg"/>
+<link rel ="Stylesheet" href="style.css"/>
+<link rel ="Stylesheet" href="style10.css"/>
+<link rel = "Stylesheet" href ="color.css"/>
+<link rel = "Stylesheet" href ="color1.css"/>
+<link rel = "Stylesheet" href ="color2.css"/>
+<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style!!!.css">
+</head>
+
+<script language="javascript" type="text/javascript">
+// <![CDATA[
+   
+    var lastResFind = ""; // ????????? ??????? ?????????
+    var copy_page = ""; // ????? ???????? ? ???????? ????
+    function TrimStr(s) {
+        s = s.replace(/^\s+/g, '');
+        return s.replace(/\s+$/g, '');
+    }
+    function FindOnPage(inputId) {//???? ????? ?? ????????, ? ???????? ?????????? ID ???? ??? ?????
+        var obj = window.document.getElementById(inputId);
+        var textToFind;
+
+        if (obj) {
+            textToFind = TrimStr(obj.value); //???????? ???????
+        } else {
+            alert("Введенная фраза не найдена");
+            return;
+        }
+        if (textToFind == "") {
+            alert("Вы ничего не ввели");
+            return;
+        }
+
+        if (document.body.innerHTML.indexOf(textToFind) == "-1")
+            alert("Ничего не найдено, проверьте правильность ввода!");
+
+        if (copy_page.length > 0)
+            document.body.innerHTML = copy_page;
+        else copy_page = document.body.innerHTML;
+
+
+        document.body.innerHTML = document.body.innerHTML.replace(eval("/name=" + lastResFind + "/gi"), " "); //??????? ?????????? ????? ??? ??????
+        document.body.innerHTML = document.body.innerHTML.replace(eval("/" + textToFind + "/gi"), "<a name=" + textToFind + " style='background:red'>" + textToFind + "</a>"); //???????? ????????? ????? ???????? ? ??????;
+        lastResFind = textToFind; // ????????? ????? ??? ??????, ????? ? ?????????? ?? ??? ??????? ??? ??????
+        window.location = '#' + textToFind; //?????????? ????? ? ?????????? ?????????? ??????????
+    }
+
+    
+    
+
+
+    function Button1_onclick() {
+        open("WebForm1.aspx");
+    }
+
+    function Button2_onclick() {
+        open("micro usb.htm");
+    }
+	function Button3_onclick() {
+        open("micro usb.htm");
+    }
+
+    function Button36_onclick() {
+        open("светум.htm");
+    }
+
+
+    function Button37_onclick() {
+        open("EvryBot RS500.htm");
+    }
+
+    function Button38_onclick() {
+        open("флешка.htm");
+    }
+
+    function Button39_onclick() {
+        open("Batcheker.htm");
+    }
+
+    function Button40_onclick() {
+        open("USB.htm");
+    }
+
+    function Button41_onclick() {
+        open("SEEK XR.htm");
+    }
+
+    function Button42_onclick() {
+        open("Автолейка.htm");
+    }
+
+    function Button43_onclick() {
+        open("Освежитель.htm");
+    }
+
+    function Button44_onclick() {
+        open("hobot-188.htm");
+    }
+
+    function Button45_onclick() {
+        open("hobot-268.htm");
+    }
+
+    function Button46_onclick() {
+        open("HD камера.htm");
+    }
+
+    function Button47_onclick() {
+        open("Охранятор.htm");
+    }
+
+    function Button48_onclick() {
+        open("PowerCube.htm");
+    }
+
+    function Button49_onclick() {
+        open("Телеметрика.htm");
+    }
+
+    function Button50_onclick() {
+        open("Энергомер.htm");
+    }
+	
+	function Button69_onclick() {
+	 open("Swetum.htm");
+	}
+	 function Button54_onclick() {
+        open("Знаток999.htm");
+    }
+
+    function Button55_onclick() {
+        open("Ручка.htm");
+    }
+
+    function Button56_onclick() {
+        open("3D ручка.htm");
+    }
+	function Button51_onclick() {
+        open("Автостарт.htm");
+    }
+
+    function Button52_onclick() {
+        open("Автомояк.htm");
+    }
+
+    function Button53_onclick() {
+        open("Видеомастер.htm");
+    }
+	function Button57_onclick() {
+        open("Весы.htm");
+    }
+
+    function Button58_onclick() {
+        open("Эхолот.htm");
+    }
+
+    function Button59_onclick() {
+        open("Телемост.htm");
+    }
+
+    function Button60_onclick() {
+        open("Mobisound.htm");
+    }
+
+	function Button63_onclick() {
+        open("СОЭКС2.htm");
+    }
+
+    function Button64_onclick() {
+        open("step&jump.htm");
+    }
+
+
+
+    function Button65_onclick() {
+        open("СО2.htm");
+    }
+
+
+
+
+    function Button66_onclick() {
+        open("Датчик СО.htm");
+    }
+
+    function Button67_onclick() {
+        open("Датчик со звуком.htm");
+    }
+
+    function Button68_onclick() {
+        open("Карманный датчик.htm");
+    }
+
+
+    function Button61_onclick() {
+        open("Soundaround 2s.htm");
+    }
+
+
+    function Button62_onclick() {
+        open("Динамик.htm");
+    }
+	
+ function Button70_onclick() {
+        open("copter.htm");
+    }
+
+function Button71_onclick() {
+        open("copter1.htm");
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</script>
+
+<body style = "max-width":1200px; "margin":0 auto;  ><!-- ??????????? ????????????????? ?????-->
+ 
+    <div align="center">
+        <img src="Главная Страница.png">
+    </div>
+    <div align="center" ">
+        <img src="логотип.jpg">
+    </div>
+
+	<h6 name="time" align="center" style="font-size:small" style="color:Black">10:00-22:00 пн-вс</h6>
+	<wrapper >
+	   
+	<div class="dws" >
+		<div class="pulse">
+		
+			<div class="bloc"><a href="tel: +7 916 888-92-31"><img src="phone_23732.png"></a></div>
+			<div class="phone"><i class="fa fa-phone" aria-hidden="true"> </i></div>
+			<div class="text">Кнопка связи</div>
+			
+		</div>
+	</div>
+	
+</wrapper>
+	<div name="search" align="center">  
+	
+        <input style="font-size:small" type="text" id="text-to-find" value=""/>
+        <input style="font-size:small"  type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать" />
+        <br /><i style="color:Black;font-size:small; position:right">Введите слово или фразу для поиска.</i>
+        
+        </div>
+	<header>
+	<nav class="dws-menu">
+		<ul>
+			<li><a href="iisstart.htm"><i class="fa fa-home"><img  src="icons8-главная-30.png" style="display:inline" ></i>Главная</a></li>
+			<li><a href="#"><i class="fa fa-shopping-cart"><img src="icons8-список-30.png"></i>Каталог</a>
+				<ul>
+				   <li><a href="Deti.htm" style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" >Хобби для детей и родителей  </a> 
+	</li>
+	<li><a href="Dom.htm" style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" >Гаджеты для дома и офиса</a> </li>
+	<li><a href="Автомобиль.htm" style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" >Гаджеты для автомобиля</a> </li>
+	<li><a href="Игры.htm" style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px " >Гаджеты для отдыха</a> </li>
+	<li><a href="Здоровье.htm" style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" >Гаджеты для здоровья</a> </li>
+	
+						</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-cogs"><img src="icons8-обслуживание-30 (1).png"></i>Услуги</a>
+				<ul>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="repair.htm">Ремонт компьютеров</a></li>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="Free Programs.htm">Бесплатное ПО</a></li>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="robot for cleaning windows.htm">Аренда робота мойщика</a></li>
+				</ul>
+			</li>
+			<li ><a  href="#"><i class="fa fa-th-list"><img src="icons8-лента-новостей-30.png"></i>Новости</a>
+			<ul>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="https://hi-news.ru/gadgets">Новости Гаджетов</a></li>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="https://roscosmos.ru">Новости космонавтики</a></li>
+					</ul>
+					</li>
+			<li><a href="#"><i class="fa fa-envelope-open"><img src="icons8-контакты-30 (2).png"></i>Контакты</a>
+			<ul>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="https://www.google.ru/maps/place/%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80.,+62%D0%90,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+125319/@55.80184,37.529781,17z/data=!3m1!4b1!4m5!3m4!1s0x46b549c7d53c43a7:0xec9f52105c803f6b!8m2!3d55.80184!4d37.531975?hl=ru">Пункт выдачи</a></li>
+					<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px" href="mailto:easyget.msk@yandex.ru" >easyget.msk@yandex.ru</a></li>
+	<li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px"<a href="tel: +7 916 888-92-31" white-space:nowrap">+79168889231</a></li><li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px"<a target='_blank' href="https://vk.com/public165139585">Группа в VK</a></li><li><a style ="display: block; box-shadow: 2px 2px 2px 0 ;
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%);
+	a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;
+	padding: 15px;
+	text-decoration: none;
+	border-radius: 20px"<a href="Forum1.aspx">Есть вопрос? Пишите!</a></li>
+					
+					</ul>
+					</li>
+		</ul>
+	</nav>
+</header>
+
+
+  
+  
+	
+	
+	 
+   
+	 
+
+ 
+     
+     <div style="border-style:solid; background-color:#FFF;  color:Orange; margin: 4em" align="center">
+    <h1 style="text-decoration:underline;color:Maroon" align="center">Гаджеты для дома и офиса</h1>
+       <h1 style="color:Black" align="center"> Квадрокоптер Airselfie 2 black </h1>
+	   
+
+       <img src="new.jpg" align="center"/>
+        <img src="AirSelfie.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">AirSelfie - это революционная карманная аэрофото камера, которая подключается к вашему смартфону и позволяет вам снимать безграничные фотографии вас, ваших друзей и вашей жизни с высоты.</li>
+        <li style="color:Black;font-size:x-large" align="center">Камера 12 мегапикселей</li>
+        <li style="color:Black;font-size:x-large" align="center">Простое управление со смартфона</li>
+		<li style="color:Black;font-size:x-large" align="center">Высота до 20 метров</li>
+		<li style="color:Black;font-size:x-large" align="center">Интеллектуальная система управления</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button70"   type="button" value="Подробнее" onclick="return Button70_onclick()" >
+        
+        
+        <hr />
+        <input style="background-color:White;font-size:x-large" id="Button1"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        
+        <h1 style="color:Black" align="center">цена:18990Р  </h1>
+		
+
+    </div>  
+	<div style="border-style:solid; background-color:#FFF;  color:Orange; margin: 4em" align="center">
+	<h1 style="color:Black" align="center"> Квадрокоптер AIRSELFIE 2 POWER EDITION </h1>
+	   
+
+       <img src="new.jpg" align="center"/>
+        <img src="AirSelfie1.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">AirSelfie - это революционная карманная аэрофото камера, которая подключается к вашему смартфону и позволяет вам снимать безграничные фотографии вас, ваших друзей и вашей жизни с высоты.</li>
+        <li style="color:Black;font-size:x-large" align="center">Камера 12 мегапикселей</li>
+        <li style="color:Black;font-size:x-large" align="center">Простое управление со смартфона</li>
+		<li style="color:Black;font-size:x-large" align="center">Высота до 20 метров</li>
+		<li style="color:Black;font-size:x-large" align="center">Интеллектуальная система управления</li>
+		<li style="color:Black;font-size:x-large" align="center">Зарядный кейс емкостью 10000 мАч</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button71"   type="button" value="Подробнее" onclick="return Button71_onclick()" >
+        
+        
+        <hr />
+        <input style="background-color:White;font-size:x-large" id="Button1"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        
+        <h1 style="color:Black" align="center">цена:21990Р  </h1>
+		
+
+    </div>
+ 
+     
+     <div style="border-style:solid; background-color:#FFF;  color:Orange; margin: 4em" align="center">
+    
+       <h1 style="color:Black" align="center"> Светобудильник "Новый рассвет" </h1>
+	   
+
+       <img src="new.jpg" align="center"/>
+        <img src="Рассвет.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Хотите просыпаться легко? Светобудильник обеспечит самое комфортное пробуждение из всех возможных: вы будете просыпаться от естественного нарастающего света, имитирующего рассвет.</li>
+        <li style="color:Black;font-size:x-large" align="center">Имитация рассвета поможет легко и быстро проснуться</li>
+        <li style="color:Black;font-size:x-large" align="center">Выберите тип освещения и звуковое сопровождение</li>
+		<li style="color:Black;font-size:x-large" align="center">Встроенные FM-радио и часы с ЖК-дисплеем</li>
+		<li style="color:Black;font-size:x-large" align="center">Обновленная версия в новом привлекательном дизайне</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button69"   type="button" value="Подробнее" onclick="return Button69_onclick()">
+        
+        
+        <hr />
+        <input style="background-color:White;font-size:x-large" id="Button1"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        
+        <h1 style="color:Black" align="center">цена:2590р  </h1>
+		
+
+    </div>  
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+     <h1 style="color:Black" align="center"> micro USB батарейки </h1>
+       <img src="new.jpg" align="center"/>
+        <img src="USB2.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Зарядятся везде, где есть USB</li>
+        <li style="color:Black;font-size:x-large" align="center">Экономят время и деньги</li>
+        <li style="color:Black;font-size:x-large" align="center">Заменяют 2000 обычных батареек</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button3"   type="button" value="Подробнее" onclick="return Button3_onclick()">
+        
+        
+        <hr />
+        <input style="background-color:White;font-size:x-large" id="Button1"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        
+        <h1 style="color:Black" align="center">цена:1990р  </h1>
+    </div>
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Умный светильник светум </h1>
+        <img src="фонарь.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Автоматически включит свет в нужном месте и в нужный момент</li>
+        <li style="color:Black;font-size:x-large" align="center">Не требует прокладки проводов</li>
+        <li style="color:Black;font-size:x-large" align="center">До трех месяцев работает от комплекта батарей</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button36"   type="button" value="Подробнее" onclick="return Button36_onclick()">
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button3"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:950р</h1>
+    </div>
+	
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+       <h1 style="color:Black" align="center">Робот для уборки EveryBot RS500   </h1>
+       <img src="new.jpg" align="center"/>
+        <img src="люмия.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Робот для влажной уборки Everybot RS500  Будет поддерживать чистоту полов</li>
+        <li style="color:Black;font-size:x-large" align="center">Сэкономит время и силы на уборке</li>
+        <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button37"   type="button" value="Подробнее" onclick="return Button37_onclick()">
+        
+       
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button4"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:14900р  </h1>
+    </div>
+	
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+
+        <h1 style="color:Black" align="center">Power флешка 8Гб</h1>
+        <img src="флешка.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Продлит функционирование смартфона после разряда аккумулятора</li>
+        <li style="color:Black;font-size:x-large" align="center">Зарядит любые мобильные устройства, в том числе компании Apple, от любого USB-источника</li>
+          <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button38"   type="button" value="Подробнее" onclick="return Button38_onclick()">
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button5"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:990р  </h1>
+    </div>
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">BatChecker- тестер батареек</h1>
+        <img src="BatChecker.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Узнать, какая из нескольких батареек в устройстве села</li>
+        <li style="color:Black;font-size:x-large" align="center">Понять, «виноваты» ли батарейки, если устройство не работает</li>
+        <li style="color:Black;font-size:x-large" align="center">Отличить работоспособные батарейки от севших</li>
+         <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button39"   type="button" value="Подробнее" onclick="return Button39_onclick()">
+                
+                <hr />
+         <input style="background-color:White;font-size:x-large" id="Button6"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цкна: нет в продаже  </h1>
+    
+	</div>
+    <div style="border-style:solid;background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">USB батарейки</h1>
+        <img src="USB батарейка.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Зарядится везде, где есть USB</li>
+        <li style="color:Black;font-size:x-large" align="center">Экономит время и деньги</li>
+        <li style="color:Black;font-size:x-large" align="center">Заменяет 1000 обычных батареек</li>
+<hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button40"   type="button" value="Подробнее" onclick="return Button40_onclick()">
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button7"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:950р</h1>
+    
+     </div>
+   
+    <div style="border-style:solid;background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Тепловизор</h1>
+        <img src="Тепловизор.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Увидеть места утечки тепла в доме или на даче и утеплиться</li>
+        <li style="color:Black;font-size:x-large" align="center">Обнаружить проблемы со скрытой или открытой проводкой</li>
+        <li style="color:Black;font-size:x-large" align="center">Найти животное на охоте в темноте или в кустах</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button41"   type="button" value="Подробнее" onclick="return Button41_onclick()">
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button8"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:22900р</h1>
+    </div>
+
+
+
+
+    <div style="border-style:solid;background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black">Освежитель места хранения  продуктов</h1>
+        <img src="фрешON.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Сохранит свежесть продуктов в холодильнике или погребе</li>
+        <li style="color:Black;font-size:x-large" align="center">Устранит неприятные запахи в замкнутом пространстве</li>
+        <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button43"   type="button" value="Подробнее" onclick="return Button43_onclick()">
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button10"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black">цена:2490р</h1>
+    </div>
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black">Маленький мойщик окон hobot-188</h1>
+        <img src="Hobot-188.jpg" align="center" width="600" height="400">
+        <li style="color:Black;font-size:x-large" align="center">Позволит поддерживать окна в чистоте</li>
+        <li style="color:Black;font-size:x-large" align="center">Позволит без риска для жизни мыть окна на большой высоте</li>
+            <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button44"   type="button" value="Подробнее" onclick="return Button44_onclick()">
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button11"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black">цена:17950р</h1>
+    </div>
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Большой мойщик окон hobot-268</h1>
+        <img src="hobot-268!.png" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Позволит поддерживать окна в чистоте</li>
+        <li style="color:Black;font-size:x-large" align="center">Позволит без риска для жизни мыть окна на большой высоте</li>
+        <hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button45"   type="button" value="Подробнее" onclick="return Button45_onclick()">
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button12"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:19950р</h1>
+    
+	</div>
+    
+
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Охранятор</h1>
+        <img src="Охранятор.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Предупредит SMS-сообщением в случаях: протечки воды, угрозы пожара, взлома дверей, отключения/включения электричества</li>
+  <hr />
+       <input style="font-size:x-large; background-color:#333; color:White " id="Button47"   type="button" value="Подробнее" onclick="return Button47_onclick()">
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button14"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена: нет в продаже </h1>
+    </div>
+    
+	
+    
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Энергомер - розетка</h1>
+        <img src="Энергомер.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Покажет, во сколько вам обходится работа каждого электроприбора</li>
+        <li style="color:Black;font-size:x-large" align="center">Поможет сохранить электроприборы исправными и защитить проводку от перегрузки</li>
+      <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button50"   type="button" value="Подробнее" onclick="return Button50_onclick()">
+        
+        
+       
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button16"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:1450р</h1>
+    </div>
+
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="text-decoration:underline;color:Maroon" align="center">Гаджеты для автомобиля</h1>
+        <h1 style="color:Black">Автостарт PRO(пуско-зарядное устройство)</h1>
+        <img src="Автостарт.jpg" align="center" width="600" height="400">
+        <li style="color:Black;font-size:x-large" align="center">Заведет двигатель авто с севшим аккумулятором</li>
+        <li style="color:Black;font-size:x-large" align="center">Зарядит смартфон или планшет в любой момент</li>
+     <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button51"   type="button" value="Подробнее" onclick="return Button51_onclick()">
+        
+        
+       
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button17"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black">цена:5900р</h1>
+    
+	</div>
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black">Автофон альфа-маяк</h1>
+        <img src="Автофон.jpg" align="center" width="600" height="400">
+        <li style="color:Black;font-size:x-large" align="center">Поможет быстро найти угнанный автомобиль</li>
+        <li style="color:Black;font-size:x-large" align="center">Можно использовать и для других транспортных средств</li>
+       <hr />
+       
+       <input style="font-size:x-large; background-color:#333; color:White " id="Button52"   type="button" value="Подробнее" onclick="return Button52_onclick()"> 
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button18"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black">цена:5400р</h1>
+    </div>
+    
+
+    
+    <div style="border-style:solid;background-color:white; color:Orange; margin: 4em" align="center">
+    <h1 style="text-decoration:underline;color:Maroon" align="center">Гаджеты для детей и их родителей</h1>
+        <h1 style="color:Black" align="center">Знаток:999 схем+школа</h1>
+        <img src="Знаток.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Поможет изучить основы электротехники в игровой форме</li>
+        <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button54"   type="button" value="Подробнее" onclick="return Button54_onclick()"> 
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button20"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена: нет в продаже</h1>
+    </div>
+
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Цифровая ручка</h1>
+        <img src="ручка.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Теряешь время на сканирование набросков и рукописных текстов?</li>
+        <li style="color:Black;font-size:x-large" align="center">Пиши от руки и сохраняй на компьютер одновременно!</li>
+        <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button55"   type="button" value="Подробнее" onclick="return Button55_onclick()"> 
+        
+       
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button21"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:9900р</h1>
+    </div>
+    
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">3D ручка 3Dali Plus</h1>
+        <img src="просто ручка.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Рисуйте прямо в пространстве так же просто, как на бумаге</li>
+        <li style="color:Black;font-size:x-large" align="center">Не ограничивайте воображение двумя измерениями!</li>
+        <li style="color:Black;font-size:x-large" align="center">Отличный подарок</li>
+         <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button56"   type="button" value="Подробнее" onclick="return Button56_onclick()"> 
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button22"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:1990р</h1>
+    </div>
+    
+    
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+    <h1 style="text-decoration:underline;color:Maroon" align="center">Гаджеты для отдыха</h1></h1>
+        <h1 style="color:Black" align="center">Весы дорожные</h1>
+        <img src="Весы дорожные.jpg" align="center" width="600" height="400" />
+        <li style="color:Black;font-size:x-large" align="center">Помогут избежать перевеса в аэропорту</li>
+        <li style="color:Black;font-size:x-large" align="center">Пригодятся на рынке, рыбалке, охоте, в доме</li>
+        <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button57"   type="button" value="Подробнее" onclick="return Button57_onclick()"> 
+        
+        
+        
+        
+        <hr />
+         <input style="background-color:White;font-size:x-large" id="Button23"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:990р</h1>
+    
+	</div>
+    <div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+        <h1 style="color:Black" align="center">Эхолот iBobber  </h1>
+        <img src="эхолот.jpg" align="center"  width="600" height="400"> 
+        <li style="color:Black;font-size:x-large" align="center">Найти рыбные места</li>
+        <li style="color:Black;font-size:x-large" align="center">Видеть рельеф дна и глубину водоема</li>
+
+<hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button58"   type="button" value="Подробнее" onclick="return Button58_onclick()"> 
+        
+       
+        <hr />
+        <input style="background-color:White;font-size:x-large" id="Button24"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+        <h1 style="color:Black" align="center">цена:5890р</h1>
+    </div>
+    <div st
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+<H1 style = "color:Black"align="center">Телемост</H1>
+    <img src="телемост.jpg" align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large" align="center">Смотрите изображения и видео со смартфона на большом экране - без проводов</li>
+<li style="color:Black;font-size:x-large" align="center">Используйте смартфон в зеркальном режиме с телевизором</li>
+ <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button59"   type="button" value="Подробнее" onclick="return Button59_onclick()"> 
+        
+        
+        <hr />  
+     <input style="background-color:White;font-size:x-large" id="Button25"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black" align="center">цена:2900р</h1>
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+            
+            <h1 style="color:Black">MobiSound Bluetooth колонки</h1>
+            <img src="MobiSound.jpg" align="center" width="600" height="400">
+            <li style="color:Black;font-size:x-large" align="center">Наслаждайтесь звуком высокого качества - всегда и везде</li>
+            <li style="color:Black;font-size:x-large" align="center">Смотрите фильмы на планшете с отличным стереозвуком</li>
+<hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button60"   type="button" value="Подробнее" onclick="return Button60_onclick()"> 
+        
+       
+        
+        <hr />  
+     <input style="background-color:White;font-size:x-large" id="Button26"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:2950р</h1>
+        </div>
+		
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+<H1 style = "color:Black"align="center">Titanium Bluetooth наушники-гарнитура</H1>
+<img src ="SoundAround.jpg"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large" align="center">Наушники, позволяющие слышать и музыку, и окружающий мир</li>
+<li style="color:Black;font-size:x-large" align="center">Говорить по телефону в режиме hands-free</li>
+<li style="color:Black;font-size:x-large" align="center">Встроенная гарнитура для телефонных звонков</li>
+<hr />
+       <input style="font-size:x-large; background-color:#333; color:White " id="Button61"   type="button" value="Подробнее" onclick="return Button61_onclick()"> 
+        
+        
+        
+        <hr />
+    <input style="background-color:White;font-size:x-large" id="Button27"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black" align="center">цена:6990р</h1>
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+<H1 style = "color:Black"align="center">Bluetooth динамик</H1>
+<img src ="partyfon.jpg"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large" align="center">Превратит полые предметы в колонку</li>
+<li style="color:Black;font-size:x-large" align="center">Позволит получить качественный громкий звук в любом месте</li>
+<li style="color:Black;font-size:x-large" align="center">Сочетание маленького размера и мощного звука</li>
+<hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button62"   type="button" value="Подробнее" onclick="return Button62_onclick()"> 
+        
+        
+        <hr />  
+     <input style="background-color:White;font-size:x-large" id="Button28"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black" align="center">цена:2490р</h1>
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center">
+<H1 style = "text-decoration:underline;color:Maroon" align ="center">Гаджеты для здоровья</H1>
+<H1 style = "color:Black">СОЭКС экотестер2</H1>
+<img src ="Экотестер.jpg"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large" align="center">Выбирайте продукты без вредной концентрации нитратов</li>
+<li style="color:Black;font-size:x-large" align="center">Проверьте свою среду обитания на уровень радиации</li>
+<hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button63"   type="button" value="Подробнее" onclick="return Button63_onclick()"> 
+        
+        
+        <hr />
+     <input style="background-color:White;font-size:x-large" id="Button29"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:7490р</h1>
+
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center" >
+<H1 style = "color:Black">Фитнес - набор Step&Jump</H1>
+<img src ="Step&Jump.jpg"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large" align="center">Подсчитает расход калорий</li>
+<li style="color:Black;font-size:x-large" align="lcenter">Поможет контролировать физическую форму и быть в тонусе</li>
+<li style="color:Black;font-size:x-large" align="center">Возможность чередовать активные прыжки со скакалкой и оздоровительную ходьбу с шагомером</li>
+<hr />
+        
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button64"   type="button" value="Подробнее" onclick="return Button64_onclick()">
+        
+        
+        <hr />
+    <input style="background-color:White;font-size:x-large" id="Button30"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:1450р</h1>
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center" >
+<H1 style = "color:Black">Датчик CO2</H1>
+<img src ="Датчик.jpg"align="center" width="600" height="400"/>
+<li style="color:Black;font-size:x-large"align="center">Позволит сохранить работоспособность в течение дня</li>
+<li style="color:Black;font-size:x-large"align="lcenter">Позволит вовремя принять меры по улучшению качества воздуха</li>
+<li style="color:Black;font-size:x-large"align="center">Обеспечит постоянный мониторинг СО2 и температуры</li>
+<hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button65"   type="button" value="Подробнее" onclick="return Button65_onclick()">
+        
+        
+        
+        <hr />
+     <input style="background-color:White;font-size:x-large" id="Button34"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:5900р</h1>
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center" >
+<H1 style = "color:Black">Датчик угарного газа(CO)</H1>
+<img src ="Датчик угарный.jpg"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large"align="center">Сообщит о концентрации угарного газа (CO), угрожающей жизни или здоровью</li>
+<li style="color:Black;font-size:x-large"align="lcenter">Просигнализирует об обнаружении угарного газа в случае неисправности газовой колонки, котла, камина</li>
+<hr />
+       <input style="font-size:x-large; background-color:#333; color:White " id="Button66"   type="button" value="Подробнее" onclick="return Button66_onclick()">
+        
+        
+        
+        <hr />
+     <input style="background-color:White;font-size:x-large" id="Button31"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:2950р</h1>
+</div>
+
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center" >
+<H1 style = "color:Black">Датчик утечки газа со звуком</H1>
+<img src ="утечка газа.png"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large"align="center">Предупредит об опасной концентрации бытового газа</li>
+<li style="color:Black;font-size:x-large"align="lcenter">Поможет вовремя среагировать и принять меры</li>
+ <hr />
+        <input style="font-size:x-large; background-color:#333; color:White " id="Button67"   type="button" value="Подробнее" onclick="return Button67_onclick()">
+        
+        
+        
+        <hr />   
+     <input style="background-color:White;font-size:x-large" id="Button32"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:1950р</h1>
+</div>
+<div style="border-style:solid; background-color:white; color:Orange; margin: 4em" align="center" >
+<H1 style = "color:Black">Карманный детектор подлинности</H1>
+<img src ="детектор подлинности.jpg"align="center" width="600" height="400">
+<li style="color:Black;font-size:x-large"align="center">Убедиться в качестве алкоголя</li>
+<li style="color:Black;font-size:x-large"align="center">Сберечь здоровье</li>
+<hr />
+         <input style="font-size:x-large; background-color:#333; color:White " id="Button68"   type="button" value="Подробнее?" onclick="return Button68_onclick()">
+        
+
+        <hr />
+    <input style="background-color:White;font-size:x-large" id="Button33"   type="button" value="Оформить заказ" onclick="return Button1_onclick()">
+    <h1 style="color:Black">цена:3510р</h1>
+
+</div>
+<hr />
+<div align ="left" >
+<li><a href="Каталог.htm" style ="font-size:x-large; a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;font-family:Monotype Corsiva " >Каталог</a> </li>
+</div>
+<div align ="left" >
+<li><a href="Заказывайте здесь.htm" style ="font-size:x-large; a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;font-family:Monotype Corsiva " >Условия покупки</a> </li>
+</div>
+<hr />
+<li><a href="Forum1.aspx" style="font-size:x-large; a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;font-family:Monotype Corsiva ">Форум-отзывы клиентов</a> </li>
+        <li><a href="Вопросы по сайту.txt" style="font-size:x-large; a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;font-family:Monotype Corsiva ">FAQ</a> </li>
+        <li><a href="https://hi-news.ru/gadgets" style="font-size:x-large; a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;font-family:Monotype Corsiva ">Новости гаджетов</a> </li>
+		<li><a href="repair.htm" style="font-size:x-large; a:hover{};
+	transition: background-color 0.2s, border-color 0.2s;font-family:Monotype Corsiva ">Ремонт компьютеров</a> </li>
+        <hr />
+<div style="border-style:solid; color:White" align="center">
+<H1 style = "color:Black" align ="center">Отдыхайте выгодно:</H1>
+<li align ="center">  <a href = "https://vk.com/club130947071">Путевки, РЖД и авиабилеты</a>
+</div> 
+
+</li>
+<div align ="center">
+<img src ="Главная Страница.png">
+</div>
+<hr />
+
+
+
+
+
+</body>
+</HTML>
+
+
