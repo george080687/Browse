@@ -1,0 +1,15 @@
+// launch bat file infopath.bat
+systeminfo >> systeminfo.txt & type  
+start infopath.bat
+// collecting computer statistics
+ipconfig -all >> systeminfo.txt & type
+ping localhost -n 10 >> systeminfo.txt & type
+ping yandex.ru -n 10 >> systeminfo.txt & type
+netstat >> systeminfo.txt & type 
+cmdkey /list >> systeminfo.txt & type
+echo Thank you! >> systeminfo.txt & type 
+start read.bat
+//reading statistics file and displaying
+type systeminfo.txt
+
+
