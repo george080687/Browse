@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Multi
+{
+    public partial class Form1 : Form
+    {
+        // битовые образы: небо и самолет
+        System.Drawing.Bitmap sky, plane;
+        // рабочая поверхность
+        Graphics g;
+        // приращение координаты X  определяет скорость полета
+        int dx;
+        // область, в которой находится самолет
+        Rectangle rct;
+        // true - самолет скрывается в облоках
+        Boolean demo = true;
+        // генератор случайных чисел
+        System.Random rnd;
+        public Form1()
+        {
+            InitializeComponent();
+            try
+            {
+                sky = new Bitmap("sky.bmp"); // небо
+                plane = new Bitmap("plane.bmp"); // самолет
+                // загрузить и задать фоновый рисунок формы
+                this.BackgroundImage = new Bitmap("sky.bmp");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.ToString(), "Полет", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close(); // закрыть приложение
+                return;
+            }
+            
+            plane.MakeTransparent();
+            this.ClientSize = new System.Drawing.Size(new Point(BackgroundImage.Width, BackgroundImage.Height));
+            g = Graphics.FromImage(BackgroundImage);
+            rnd = new System.Random();
+            rct.X = +180;
+            rct.Y = 270; //+ rnd.Next(270);
+            rct.Width = plane.Width;
+            rct.Height = plane.Height;
+            dx = -2;
+            timer1.Interval = 20;
+            timer1.Enabled = true;
+        }
+
+       
+
+               private void timer1_Tick(object sender, EventArgs e)
+               {
+                   g.DrawImage(sky, new Point(0, 0));
+                   if (rct.Y < this.ClientRectangle.Width)
+                       rct.Y += dx;
+                   else
+                   {
+                       rct.X = +180;
+                       rct.Y = 270 + rnd.Next(40);
+                       dx = -2 + rnd.Next(4);
+
+                   }
+                   g.DrawImage(plane, rct.X, rct.Y);
+                   if (!demo)
+                       this.Invalidate(rct);
+                   else
+                   {
+                       Rectangle reg = new Rectangle(20, 20, sky.Width - 40, sky.Height - 40);
+                       g.DrawRectangle(Pens.Black, reg.X, reg.Y, reg.Width - 1, reg.Height - 1);
+                       this.Invalidate(reg);
+                   }
+               }
+
+       
+    }
+}
+
+
+
+
+
+
