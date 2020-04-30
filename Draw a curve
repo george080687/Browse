@@ -1,0 +1,222 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;
+using System.Drawing.Printing;
+using System.Globalization;
+
+
+
+namespace Visualizaciya_puskov
+{
+    public partial class Рис : Form
+    {     //положение линии на плоскости
+        PointF _prev = new PointF( -90, +180);
+        PointF[] points;
+        
+       
+        public Рис()
+        {
+            InitializeComponent();
+        }
+      // public sealed class Utilities
+      //  {
+       //     private Utilities()
+         //   {
+         //   }
+         //   public static Bitmap RotateImage(Image image, float angle)
+          //  {
+          //      return RotateImage(image, new PointF((float)image.Width / 2, (float)image.Height / 2), angle);
+          //  }
+         //   public static Bitmap RotateImage(Image image, PointF offset, float angle)
+          //  {
+             //   if (image == null)
+                   
+             //       throw new ArgumentException("image");
+           //    Bitmap rotatedBmp = new Bitmap(image.Width, image.Height);
+              //  rotatedBmp.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+           //   Graphics g = Graphics.FromImage(rotatedBmp);
+           //    g.TranslateTransform(offset.X, offset.Y);
+          //     g.RotateTransform(angle);
+           //    g.TranslateTransform(-offset.X, -offset.Y);
+           //    g.DrawImage(image, new PointF(0,0));
+           //  return rotatedBmp;
+           // }
+       // }
+        
+         private void button1_Click(object sender, EventArgs e)
+        { //чертится линия по координатам, заданным в тексбоксы
+
+            PointF newPoint = new PointF(float.Parse(tbX.Text), float.Parse(tbY.Text));
+            Graphics gr = Graphics.FromHwnd(pictureBox1.Handle);
+            gr.DrawLine(new Pen(Color.Black), _prev, newPoint);
+            _prev = newPoint;
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+            // задаются параметры координатной сетки
+       private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            using (Graphics k = this.CreateGraphics())
+
+            using (Font f = new Font("Arial", 6, FontStyle.Regular))
+            
+
+
+                for (int y = 0; y < this.Width; y += 20) // цикл шага по y
+                {
+                    k.DrawLine(Pens.Black, 0, y, this.Width, y); // линии по y
+                    k.DrawString(y.ToString(), f, Brushes.Black, 0, y);
+
+                // составление сетки
+                   
+                        
+            {
+                for (int x = 0; x < this.Height; x +=20)                                               
+                {
+
+                    k.DrawLine(Pens.Black, x, 0, x, this.Height); 
+                    k.DrawString(x.ToString(), f, Brushes.Black, x, 0);
+                    
+
+                }
+                
+
+            
+              
+                    {
+                        if (points != null)
+
+                             e.Graphics.DrawCurve(Pens.DarkRed, points); // Рис. кривая красным цветом
+                             
+                            
+                     // k.DrawCurve(Pens.Red, points);
+                           
+          // b.RotateFlip(RotateFlipType.Rotate90FlipNone);
+          //  e.Graphics.DrawImage(b, new Point(0, 0));
+
+                     
+                    
+                } 
+                }
+           
+
+               }
+        }
+        //открывается диалоговое окно
+       public void button4_Click(object sender, EventArgs e)
+       {
+           if (openFileDialog1.ShowDialog() == DialogResult.OK)
+           {
+               Name = openFileDialog1.FileName;
+               textBox1.Clear();
+               textBox1.Text = File.ReadAllText(Name);
+
+               var curves = File.ReadAllLines(openFileDialog1.FileName);
+               var pointList = new List<PointF>();
+
+               var firstline = false;
+
+
+               foreach (var curve in curves)
+               {
+                   if (!firstline)
+                   {
+                       firstline = true;
+                       continue;
+                   }
+
+
+                   var values = curve.Split(new char[] { ' ' },
+                   StringSplitOptions.RemoveEmptyEntries);
+                   PointF pointCenter = new PointF(pictureBox1.Width / 2, pictureBox1.Height / 2);// делится поле пополам
+
+                   var y = double.Parse(values[1], CultureInfo.InvariantCulture);
+                   var x = double.Parse(values[2], CultureInfo.InvariantCulture);
+
+
+                   PointF point1 = new PointF((float)x * 5 + pointCenter.X - 60, (float)-y * 4 + pointCenter.Y + 4);// пересчитываются координаты
+
+                   //   Bitmap image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                   //  Graphics g = Graphics.FromImage(image);
+                   //   if (points != null)  
+                   //    g.DrawCurve(new Pen(Brushes.Red),points,pictureBox1.Width-1, pictureBox1.Height-1); 
+
+                   //   g.Dispose();
+                   //   pictureBox1.Image = Utilities.RotateImage(image, 90);
+                   //    image.Dispose();
+
+                   pointList.Add(point1);
+
+
+
+
+
+
+
+               }
+
+               points = pointList.ToArray();
+               pictureBox1.Refresh();
+
+           }
+
+       }
+     
+    
+         
+    
+     
+                private void button3_Click(object sender, EventArgs e)
+        {
+               CaptureScreen();
+            printDocument1.Print();   
+       
+        }
+      
+        Bitmap memoryImage;
+        private void CaptureScreen()
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(this.Location.X,this.Location.Y, -25, 0, s);
+        }
+
+
+        private void printDocument1_PrintPage_1(object sender, PrintPageEventArgs e)
+        {
+           e.Graphics.DrawImage(memoryImage, -25, 0); 
+        }
+
+      
+
+     
+
+      
+
+     
+    
+
+       
+
+       
+
+        }
+                         
+         
+    }
+
+  
+
